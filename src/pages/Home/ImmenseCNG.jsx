@@ -41,6 +41,8 @@ import {
   logo,
   processImg,
 } from "../../assets";
+import CNGFixedInfo from "../../components/CNGfixedInfo/CNGFixedInfo";
+
 const { Panel } = Collapse;
 
 // Custom Scroll Container Component
@@ -499,7 +501,7 @@ const ImmenseCNG = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <img
-                  src={processImg}
+                  src={aboutusimg}
                   alt="CNG Testing Process"
                   className="object-cover w-full h-full rounded-xl"
                 />
@@ -514,7 +516,7 @@ const ImmenseCNG = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <ScrollProgress />
-
+      <CNGFixedInfo />
       {/* Navigation */}
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -700,7 +702,6 @@ const ImmenseCNG = () => {
           )}
         </AnimatePresence>
       </nav>
-
       {/* Hero Section */}
       <ScrollContainer id="home">
         <section className="relative bg-gradient-to-r from-green-50 to-gray-100 py-20">
@@ -842,7 +843,6 @@ const ImmenseCNG = () => {
           </div>
         </section>
       </ScrollContainer>
-
       {/* Services Section */}
       <ScrollContainer id="services">
         <section className="py-16 bg-gray-50">
@@ -936,17 +936,14 @@ const ImmenseCNG = () => {
           </div>
         </section>
       </ScrollContainer>
-
       {/* Process Image Section */}
       <ScrollContainer id="process">
         <ProcessImageSection />
       </ScrollContainer>
-
       {/* Gallery Section */}
       <ScrollContainer id="gallery">
         <GallerySection />
       </ScrollContainer>
-
       {/* Certifications Section */}
       <ScrollContainer id="certifications">
         <section className="py-12 sm:py-16 px-4 bg-white">
@@ -1111,7 +1108,6 @@ const ImmenseCNG = () => {
           </div>
         </section>
       </ScrollContainer>
-
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -1154,7 +1150,6 @@ const ImmenseCNG = () => {
           </div>
         </div>
       </section>
-
       {/* Testimonials Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -1216,7 +1211,6 @@ const ImmenseCNG = () => {
           </div>
         </div>
       </section>
-
       {/* Contact Section */}
       <ScrollContainer id="contact">
         <section className="py-16 bg-white">
@@ -1490,7 +1484,6 @@ const ImmenseCNG = () => {
           </div>
         </section>
       </ScrollContainer>
-
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12">
         <div className="container mx-auto px-4">
